@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  repository_dispatch:
+    types: [release-published]
+  schedule:
+    # Safety net: re-sync download URLs daily at 02:00 UTC even if no release-dispatch fires
+    - cron: '0 2 * * *'
 
 permissions:
   contents: read

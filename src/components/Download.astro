@@ -1,15 +1,12 @@
 ---
 import type { Strings } from '../i18n/strings';
+import { getLatestRelease } from '../lib/releases';
 interface Props {
   t: Strings;
 }
 const { t } = Astro.props;
 
-const VERSION = 'v0.1.0';
-const MAC_URL =
-  'https://github.com/onshworks-vj/textcast-releases/releases/download/v0.1.0/TextCast-0.1.0-universal.dmg';
-const WIN_URL = 'https://github.com/onshworks-vj/textcast-releases/releases/latest';
-const RELEASES_URL = 'https://github.com/onshworks-vj/textcast-releases/releases';
+const { version: VERSION, macUrl: MAC_URL, winUrl: WIN_URL, releasesUrl: RELEASES_URL } = await getLatestRelease();
 ---
 
 <section id="download" class="relative border-t border-[var(--color-border-soft)] bg-[var(--color-bg)]">
