@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import Demo from '../components/Demo.astro';
+import Download from '../components/Download.astro';
+import FAQ from '../components/FAQ.astro';
+import Footer from '../components/Footer.astro';
+import { strings } from '../i18n/strings';
+
+const t = strings.ko;
+---
+
+<Layout
+  lang="ko"
+  title="TextCast — 무대를 위한 실시간 텍스트 송출"
+  description="VJ·공연·예배·라이브 스트리밍을 위한 실시간 텍스트 송출 도구. macOS Syphon / Windows Spout 지원, 15종 애니메이션과 정교한 타이포그래피."
+>
+  <Nav t={t} />
+  <main>
+    <Hero t={t} />
+    <Features t={t} />
+    <Demo t={t} />
+    <Download t={t} />
+    <FAQ t={t} />
+  </main>
+  <Footer t={t} />
+</Layout>

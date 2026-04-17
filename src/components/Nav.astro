@@ -1,0 +1,35 @@
+---
+import type { Strings } from '../i18n/strings';
+interface Props {
+  t: Strings;
+}
+const { t } = Astro.props;
+---
+
+<header class="sticky top-0 z-50 border-b border-[var(--color-border-soft)]/80 bg-[var(--color-bg)]/75 backdrop-blur-xl">
+  <nav class="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
+    <a href="/" class="flex items-center gap-2 font-semibold tracking-tight">
+      <img src="/icon.png" alt="TextCast" width="24" height="24" class="rounded-md" />
+      <span>TextCast</span>
+    </a>
+    <div class="hidden items-center gap-8 text-sm text-[var(--color-text-muted)] md:flex">
+      <a href="#features" class="hover:text-[var(--color-text)] transition-colors">{t.nav.features}</a>
+      <a href="#demo" class="hover:text-[var(--color-text)] transition-colors">{t.nav.demo}</a>
+      <a href="#faq" class="hover:text-[var(--color-text)] transition-colors">{t.nav.faq}</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a
+        href={t.nav.langSwitchHref}
+        class="rounded-full border border-[var(--color-border)] px-3 py-1 text-xs text-[var(--color-text-muted)] hover:border-[var(--color-brand)]/50 hover:text-[var(--color-text)] transition-colors"
+      >
+        {t.nav.langSwitch}
+      </a>
+      <a
+        href="#download"
+        class="rounded-full gradient-bg px-4 py-1.5 text-sm font-medium text-black hover:brightness-110 transition"
+      >
+        {t.nav.download}
+      </a>
+    </div>
+  </nav>
+</header>
