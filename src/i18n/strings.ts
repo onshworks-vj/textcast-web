@@ -8,7 +8,7 @@ export const strings = {
       download: '다운로드',
       faq: 'FAQ',
       langSwitch: 'EN',
-      langSwitchHref: '/en/',
+      langSwitchHref: '/',
     },
     hero: {
       badge: 'Beta v0.1.0',
@@ -136,7 +136,7 @@ export const strings = {
       download: 'Download',
       faq: 'FAQ',
       langSwitch: 'KO',
-      langSwitchHref: '/',
+      langSwitchHref: '/ko/',
     },
     hero: {
       badge: 'Beta v0.1.0',
