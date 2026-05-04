@@ -1,43 +1,40 @@
-# Astro Starter Kit: Minimal
+# textcast-web
+
+[TextCast](https://onsight3.gumroad.com/l/TextCastbeta) 마케팅 사이트입니다. Astro로 빌드되는 정적 사이트로, 영문(`/`)·한국어(`/ko/`) 두 로케일과 비공개 초대 페이지(`/[invitee]`)를 포함합니다.
+
+## Stack
+
+- [Astro 6](https://astro.build) (정적 빌드)
+- [Tailwind CSS 4](https://tailwindcss.com) (`@tailwindcss/vite`)
+- TypeScript
+- Node.js 22.12+
+
+## 구조
+
+```
+src/
+├── components/      # Hero, Features, Demo, Download, FAQ, Footer, Nav
+├── data/            # invitees.ts — 비공개 초대 라이센스 데이터
+├── i18n/            # strings.ts — ko/en 카피
+├── layouts/         # Layout.astro
+├── lib/             # releases.ts — GitHub Releases 최신 버전 자동 fetch
+├── pages/
+│   ├── index.astro          # /        (영문)
+│   ├── ko/index.astro       # /ko/     (한국어)
+│   ├── [invitee].astro      # /:slug   (비공개 초대)
+│   └── 404.astro
+└── styles/          # global.css
+```
+
+## 개발
 
 ```sh
-npm create astro@latest -- --template minimal
+npm install
+npm run dev      # http://localhost:4321
+npm run build    # ./dist/
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 라이센스 발급
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+베타 기간 동안 [Gumroad](https://onsight3.gumroad.com/l/TextCastbeta)에서 무료로 발급됩니다. 비공개 초대는 `src/data/invitees.ts`에 슬러그 단위로 등록되어 `/{slug}` 경로로 노출되며, 만료된 초대는 Supabase `licenses` 테이블의 `machine_id`/`status` 값을 조회해 빌드 후 클라이언트에서 자동 처리됩니다.
