@@ -73,6 +73,14 @@ export const strings = {
       win: 'Windows용 다운로드',
       note: '유니버설 빌드 (Apple Silicon · Intel) / Windows x64',
       checksum: 'GitHub Releases에서 다운로드',
+      license: {
+        step: 'Step 1',
+        title: '라이센스 발급',
+        desc: '베타 기간 동안 무료. 이메일을 입력하면 라이센스 코드를 보내드립니다.',
+        cta: 'Gumroad에서 발급받기',
+        note: '결제 정보 없이 0원으로 받을 수 있습니다.',
+      },
+      downloadStep: 'Step 2',
     },
     pricing: {
       title: '가격',
@@ -201,6 +209,14 @@ export const strings = {
       win: 'Download for Windows',
       note: 'Universal build (Apple Silicon · Intel) / Windows x64',
       checksum: 'Download from GitHub Releases',
+      license: {
+        step: 'Step 1',
+        title: 'Get your license',
+        desc: 'Free during beta. Enter your email and we will send the license code.',
+        cta: 'Get on Gumroad',
+        note: 'No payment required — checkout is free.',
+      },
+      downloadStep: 'Step 2',
     },
     pricing: {
       title: 'Pricing',
