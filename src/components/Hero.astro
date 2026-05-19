@@ -8,14 +8,9 @@ const { t } = Astro.props;
 
 <section class="relative overflow-hidden">
   <div class="absolute inset-0 hero-grid pointer-events-none" aria-hidden="true"></div>
-  <div
-    class="absolute -top-40 left-1/2 h-[520px] w-[900px] -translate-x-1/2 rounded-full opacity-40 blur-3xl pointer-events-none"
-    style="background: radial-gradient(closest-side, rgba(128,255,210,0.25), transparent 70%);"
-    aria-hidden="true"
-  ></div>
 
   <div class="relative mx-auto flex max-w-5xl flex-col items-center px-6 pt-24 pb-20 text-center md:pt-32 md:pb-28">
-    <span class="rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-1 text-xs tracking-wide text-[var(--color-text-muted)]">
+    <span class="border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-1 text-xs tracking-[0.24em] text-[var(--color-brand)] uppercase">
       {t.hero.badge}
     </span>
 
@@ -30,14 +25,14 @@ const { t } = Astro.props;
     <div class="mt-9 flex flex-col items-center gap-3 sm:flex-row">
       <a
         href="#download"
-        class="inline-flex items-center gap-2 rounded-full gradient-bg px-6 py-3 text-sm font-semibold text-black shadow-lg transition hover:brightness-110 glow-brand"
+        class="inline-flex items-center gap-2 border border-[var(--color-brand)] gradient-bg px-5 py-2.5 text-sm font-semibold text-black transition hover:brightness-110 glow-brand"
       >
         {t.hero.primary}
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </a>
       <a
         href="#features"
-        class="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-6 py-3 text-sm font-medium text-[var(--color-text)] transition hover:border-[var(--color-brand)]/60"
+        class="inline-flex items-center gap-2 border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-5 py-2.5 text-sm font-medium text-[var(--color-text)] transition hover:border-[var(--color-brand)]/60"
       >
         {t.hero.secondary}
       </a>

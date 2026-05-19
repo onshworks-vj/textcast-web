@@ -11,7 +11,7 @@ export const strings = {
       langSwitchHref: '/',
     },
     hero: {
-      badge: 'Beta v0.1.0',
+      badge: 'Beta v0.1.1',
       title: '가사와 텍스트를,\n영상 위로 실시간 송출',
       subtitle:
         'VJ·공연·예배·라이브 스트리밍을 위한 텍스트 송출 도구. 복사-붙여넣기 한 번이면 프리뷰, 애니메이션, 출력까지 한 번에.',
@@ -37,7 +37,7 @@ export const strings = {
         {
           title: '곡 모드 · 가사 청크',
           desc: '가사를 곡 단위로 등록하고 원하는 줄 수로 자동 분할. 우클릭 한 번이면 청크 크기도 즉석에서 조정됩니다.',
-          comingSoon: true,
+          comingSoon: false,
         },
         {
           title: '15종 애니메이션',
@@ -147,7 +147,7 @@ export const strings = {
       langSwitchHref: '/ko/',
     },
     hero: {
-      badge: 'Beta v0.1.0',
+      badge: 'Beta v0.1.1',
       title: 'Broadcast lyrics and text,\nlive on screen.',
       subtitle:
         'A text broadcasting tool for VJs, live performances, worship, and streaming. From queue to preview, animation, and output — in one click.',
@@ -173,7 +173,7 @@ export const strings = {
         {
           title: 'Song mode · lyric chunks',
           desc: 'Register lyrics as songs and split them by the number of lines you want. Right-click any chunk to resize it on the fly.',
-          comingSoon: true,
+          comingSoon: false,
         },
         {
           title: '15 animation presets',

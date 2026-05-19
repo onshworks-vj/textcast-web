@@ -9,8 +9,8 @@ const REPO = 'onshworks-vj/textcast-releases';
 const RELEASES_URL = `https://github.com/${REPO}/releases`;
 
 const FALLBACK: ReleaseInfo = {
-  version: 'v0.1.0',
-  macUrl: `${RELEASES_URL}/download/v0.1.0/TextCast-0.1.0-universal.dmg`,
+  version: 'v0.1.1',
+  macUrl: `${RELEASES_URL}/download/v0.1.1/TextCast-0.1.1-universal.dmg`,
   winUrl: `${RELEASES_URL}/download/v0.1.0/TextCast.Setup.0.1.0.exe`,
   releasesUrl: RELEASES_URL,
 };

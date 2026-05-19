@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #0A0A0C;
-  --color-bg-elev: #121216;
-  --color-bg-card: #17171C;
-  --color-border: #26262E;
-  --color-border-soft: #1E1E24;
-  --color-text: #E8E8EA;
-  --color-text-muted: #9A9AA3;
-  --color-text-dim: #6C6C75;
-  --color-brand: #80FFD2;
-  --color-brand-2: #3DD8A4;
+  --color-bg: #050505;
+  --color-bg-elev: #101010;
+  --color-bg-card: #161616;
+  --color-border: #303030;
+  --color-border-soft: #242424;
+  --color-text: #F1F1F1;
+  --color-text-muted: #A4A4A4;
+  --color-text-dim: #6E6E6E;
+  --color-brand: #D3B46A;
+  --color-brand-2: #F0D590;
 
   --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
     'Apple SD Gothic Neo', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -39,23 +39,23 @@
 
 @layer utilities {
   .gradient-text {
-    background: linear-gradient(120deg, #80FFD2 0%, #3DD8A4 100%);
+    background: linear-gradient(180deg, #F0D590 0%, #B7944F 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
   .gradient-bg {
-    background: linear-gradient(120deg, #80FFD2 0%, #3DD8A4 100%);
+    background: linear-gradient(180deg, #E0C275 0%, #A98742 100%);
   }
   .glow-brand {
     box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-brand) 40%, transparent),
-      0 12px 40px -12px color-mix(in srgb, var(--color-brand) 35%, transparent);
+      0 10px 30px -18px color-mix(in srgb, var(--color-brand) 35%, transparent);
   }
   .hero-grid {
     background-image:
-      linear-gradient(to right, rgba(128, 255, 210, 0.06) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(128, 255, 210, 0.06) 1px, transparent 1px);
-    background-size: 56px 56px;
-    mask-image: radial-gradient(ellipse at 50% 40%, black 40%, transparent 75%);
+      linear-gradient(to right, rgba(211, 180, 106, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(211, 180, 106, 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: linear-gradient(to bottom, black 0%, transparent 82%);
   }
 }
