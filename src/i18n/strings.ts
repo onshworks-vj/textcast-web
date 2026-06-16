@@ -11,7 +11,7 @@ export const strings = {
       langSwitchHref: '/',
     },
     hero: {
-      badge: 'Beta v0.1.1',
+      badge: 'Beta v0.1.3',
       title: '가사와 텍스트를,\n영상 위로 실시간 송출',
       subtitle:
         'VJ·공연·예배·라이브 스트리밍을 위한 텍스트 송출 도구. 복사-붙여넣기 한 번이면 프리뷰, 애니메이션, 출력까지 한 번에.',
@@ -147,7 +147,7 @@ export const strings = {
       langSwitchHref: '/ko/',
     },
     hero: {
-      badge: 'Beta v0.1.1',
+      badge: 'Beta v0.1.3',
       title: 'Broadcast lyrics and text,\nlive on screen.',
       subtitle:
         'A text broadcasting tool for VJs, live performances, worship, and streaming. From queue to preview, animation, and output — in one click.',
